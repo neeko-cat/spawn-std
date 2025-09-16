@@ -5,5 +5,5 @@ edition = "2024"
 license = "MIT OR Apache-2.0 OR EUPL-1.2"
 
 [dependencies]
-spawn-std-core = { path = "../../core" }
+spawn-std-core = { version = "0.1.0-alpha.1", path = "../../core" }
 smol = "2"
