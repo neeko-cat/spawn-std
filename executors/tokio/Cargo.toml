@@ -1,0 +1,9 @@
+[package]
+name = "spawn-std-tokio"
+version = "0.1.0-alpha.1"
+edition = "2024"
+license = "MIT OR Apache-2.0 OR EUPL-1.2"
+
+[dependencies]
+tokio = { version = "1", features = ["rt"] }
+spawn-std-core = { path = "../../core" }

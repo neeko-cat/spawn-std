@@ -10,3 +10,7 @@ license = "MIT OR Apache-2.0 OR EUPL-1.2"
 
 [dependencies]
 spawn-std-core = { path = "core" }
+spawn-std-tokio = { path = "executors/tokio", optional = true }
+
+[features]
+tokio = ["dep:spawn-std-tokio"]
