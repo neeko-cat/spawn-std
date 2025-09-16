@@ -1,0 +1,22 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish to crates.io
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+        run: |
+          cargo publish --package spawn-std-core
+          cargo publish --package spawn-std-async-std
+          cargo publish --package spawn-std-smol-1
+          cargo publish --package spawn-std-smol-2
+          cargo publish --package spawn-std-tokio
+          cargo publish --package spawn-std
+
