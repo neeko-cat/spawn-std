@@ -5,6 +5,7 @@ edition = "2024"
 license = "MIT OR Apache-2.0 OR EUPL-1.2"
 repository = "https://github.com/neeko-cat/spawn-std"
 keywords = ["async"]
+description = "async-std implementation for spawn-std"
 
 [dependencies]
 spawn-std-core = { path = "../../core" }
