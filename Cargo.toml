@@ -1,0 +1,11 @@
+[workspace]
+members = [".", "core"]
+resolver = "3"
+
+[package]
+name = "spawn-std"
+version = "0.1.0-alpha.1"
+edition = "2024"
+
+[dependencies]
+spawn-std-core = { path = "core" }

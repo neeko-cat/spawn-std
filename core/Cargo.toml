@@ -1,0 +1,4 @@
+[package]
+name = "spawn-std-core"
+version = "0.1.0-alpha.1"
+edition = "2024"
