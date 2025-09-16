@@ -1,0 +1,24 @@
+A-ci:
+-  changed-files:
+  - any-glob-to-any-file: .github/**
+
+A-core:
+-  changed-files:
+  - any-glob-to-any-file: core/**
+
+A-executor-impl:
+-  changed-files:
+  - any-glob-to-any-file: executors/**
+
+A-async-std:
+-  changed-files:
+  - any-glob-to-any-file: executors/async-std/**
+A-smol-1:
+-  changed-files:
+  - any-glob-to-any-file: executors/smol-1/**
+A-smol-2:
+-  changed-files:
+  - any-glob-to-any-file: executors/smol-2/**
+A-tokio:
+-  changed-files:
+  - any-glob-to-any-file: executors/tokio/**
