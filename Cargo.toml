@@ -10,7 +10,9 @@ license = "MIT OR Apache-2.0 OR EUPL-1.2"
 
 [dependencies]
 spawn-std-core = { path = "core" }
+spawn-std-async-std = { path = "executors/async-std", optional = true }
 spawn-std-tokio = { path = "executors/tokio", optional = true }
 
 [features]
+async-std = ["dep:spawn-std-async-std"]
 tokio = ["dep:spawn-std-tokio"]

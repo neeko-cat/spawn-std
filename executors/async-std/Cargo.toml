@@ -1,0 +1,9 @@
+[package]
+name = "spawn-std-async-std"
+version = "0.1.0-alpha.1"
+edition = "2024"
+license = "MIT OR Apache-2.0 OR EUPL-1.2"
+
+[dependencies]
+spawn-std-core = { path = "../../core" }
+async-std = "1"
